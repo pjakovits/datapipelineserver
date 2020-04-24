@@ -33,6 +33,7 @@ def submit_datapipeline(data_pipeline=None):  # noqa: E501
         ".html": "text/html",
         ".js": "application/javascript",
         ".jpeg": "image/jpeg",
+        ".csar": "application/octet-stream",
     }
 
     ext = os.path.splitext(filepath)[1]
