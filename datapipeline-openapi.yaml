@@ -40,9 +40,7 @@ components:
   schemas:
     DataPipeline:
       properties:
-        filename:
-          type: array
-          items:
+        file:
             type: string
             format: binary
       type: object
