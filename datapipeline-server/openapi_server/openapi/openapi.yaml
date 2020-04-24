@@ -23,6 +23,18 @@ paths:
         "405":
           description: Invalid input
         "201":
+          content:
+            application/octet-stream:
+              schema:
+                format: binary
+                type: string
+          description: Successful operation
+        "200":
+          content:
+            application/octet-stream:
+              schema:
+                format: binary
+                type: string
           description: Successful operation
       summary: Submit a data pipeline
       tags:
@@ -38,9 +50,7 @@ components:
   schemas:
     DataPipeline:
       properties:
-        filename:
-          items:
-            format: binary
-            type: string
-          type: array
+        file:
+          format: binary
+          type: string
       type: object

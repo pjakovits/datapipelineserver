@@ -15,21 +15,21 @@ class DataPipeline(Model):
     Do not edit the class manually.
     """
 
-    def __init__(self, filename=None):  # noqa: E501
+    def __init__(self, file=None):  # noqa: E501
         """DataPipeline - a model defined in OpenAPI
 
-        :param filename: The filename of this DataPipeline.  # noqa: E501
-        :type filename: List[file]
+        :param file: The file of this DataPipeline.  # noqa: E501
+        :type file: file
         """
         self.openapi_types = {
-            'filename': List[file]
+            'file': file
         }
 
         self.attribute_map = {
-            'filename': 'filename'
+            'file': 'file'
         }
 
-        self._filename = filename
+        self._file = file
 
     @classmethod
     def from_dict(cls, dikt) -> 'DataPipeline':
@@ -43,22 +43,22 @@ class DataPipeline(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def filename(self):
-        """Gets the filename of this DataPipeline.
+    def file(self):
+        """Gets the file of this DataPipeline.
 
 
-        :return: The filename of this DataPipeline.
-        :rtype: List[file]
+        :return: The file of this DataPipeline.
+        :rtype: file
         """
-        return self._filename
+        return self._file
 
-    @filename.setter
-    def filename(self, filename):
-        """Sets the filename of this DataPipeline.
+    @file.setter
+    def file(self, file):
+        """Sets the file of this DataPipeline.
 
 
-        :param filename: The filename of this DataPipeline.
-        :type filename: List[file]
+        :param file: The file of this DataPipeline.
+        :type file: file
         """
 
-        self._filename = filename
+        self._file = file
