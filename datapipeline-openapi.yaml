@@ -31,8 +31,11 @@ paths:
           content: application/octet-stream
         200:
           description: "Successful operation"
-          content: application/octet-stream
-
+          content: 
+            application/octet-stream:
+               schema:
+                  type: string
+                  format: binary
 components:
   requestBodies:
     DataPipeline:
