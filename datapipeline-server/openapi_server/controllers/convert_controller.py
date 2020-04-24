@@ -40,4 +40,7 @@ def submit_datapipeline(data_pipeline=None):  # noqa: E501
     mimetype = mimetypes.get(ext, "image/jpeg")
     with open(filepath, 'rb') as f:
       content =  f.read()
-    return Response(content, mimetype=mimetype, headers={"Content disposition":"attachment; filename=" + file.filename})
+    
+    
+    return send_file(io.BytesIO(content), as_attachment=True, attachment_filename=file.filename, mimetype=mimetype)
+
