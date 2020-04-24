@@ -14,5 +14,5 @@ docker run -p 8080:8080 datapipeline_server
 
 ## Server UI 
 
-http://localhost:8080/RadonCTT/ui/
+http://localhost:8080/RadonDataPipeline/ui/
 
